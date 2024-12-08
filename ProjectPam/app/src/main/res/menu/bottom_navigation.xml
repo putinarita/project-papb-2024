@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/beranda"
+        android:icon="@drawable/baseline_home_24"
+        android:title="Beranda"/>
+
+    <item
+        android:id="@+id/tambah"
+        android:icon="@drawable/baseline_add_circle_24"
+        android:title="Tambah"/>
+
+    <item
+        android:id="@+id/bookmark"
+        android:icon="@drawable/baseline_bookmark_24"
+        android:title="Bookmark"/>
+
+</menu>

@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UpdateResepActivity">
+
+    <TextView
+        android:id="@+id/updateResep"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Edit Resep"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/namaResep"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/btnPrevBack"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btnPrevBack"
+        android:layout_width="48dp"
+        android:layout_height="50dp"
+        android:backgroundTint="#00ED0000"
+        android:fontFamily="sans-serif-thin"
+        android:padding="0dp"
+        android:rotationY="180"
+        android:text="➔"
+        android:textAlignment="viewEnd"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:typeface="sans"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.076"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.02"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/namaResep"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Nama Resep"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.105"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnPrevBack"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/etUpdateNama"
+        android:layout_width="355dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="12dp"
+        android:background="@android:drawable/edit_text"
+        android:backgroundTint="#D5D2D2"
+        android:gravity="top"
+        android:hint="Nama Resep"
+        android:inputType="textMultiLine"
+        android:padding="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.517"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/namaResep"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/etPorsi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Porsi Resep"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.095"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etUpdateNama" />
+
+    <EditText
+        android:id="@+id/etUpdatePorsi"
+        android:layout_width="355dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="12dp"
+        android:background="@android:drawable/edit_text"
+        android:backgroundTint="#D5D2D2"
+        android:gravity="top"
+        android:hint="Jumlah Porsi"
+        android:inputType="textMultiLine"
+        android:maxLines="20"
+        android:padding="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etPorsi"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/etBahan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Bahan-Bahan"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.091"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etUpdatePorsi" />
+
+    <EditText
+        android:id="@+id/etUpdateBahan"
+        android:layout_width="355dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="12dp"
+        android:background="@android:drawable/edit_text"
+        android:backgroundTint="#D5D2D2"
+        android:gravity="top"
+        android:hint="Tuliskan bahan yang dibutuhkan disini"
+        android:inputType="textMultiLine"
+        android:maxLines="20"
+        android:padding="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.465"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etBahan"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/etAlatalat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Alat-Alat"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.085"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etUpdateBahan" />
+
+    <EditText
+        android:id="@+id/etUpdateAlat"
+        android:layout_width="355dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="12dp"
+        android:background="@android:drawable/edit_text"
+        android:backgroundTint="#D5D2D2"
+        android:gravity="top"
+        android:hint="Tuliskan alat yang dibutuhkan disini"
+        android:inputType="textMultiLine"
+        android:maxLines="20"
+        android:padding="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.473"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etAlatalat"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/etStep"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Langkah-Langkah"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.094"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etUpdateAlat" />
+
+    <EditText
+        android:id="@+id/etUpdateLangkah"
+        android:layout_width="355dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="8dp"
+        android:background="@android:drawable/edit_text"
+        android:backgroundTint="#D5D2D2"
+        android:gravity="top"
+        android:hint="Tuliskan langkah - langkah memasak disini"
+        android:inputType="textMultiLine"
+        android:maxLines="20"
+        android:padding="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.464"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etStep"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btnUpdateResep"
+        android:layout_width="100dp"
+        android:layout_height="52dp"
+        android:backgroundTint="#7B3787"
+        android:text="Edit"
+        app:layout_constraintEnd_toStartOf="@+id/btnDeleteResep"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etUpdateLangkah"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btnDeleteResep"
+        android:layout_width="100dp"
+        android:layout_height="52dp"
+        android:backgroundTint="#FFB9B9"
+        android:text="Delete"
+        android:textColor="#D60000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnUpdateResep"
+        app:layout_constraintTop_toBottomOf="@+id/etUpdateLangkah"
+        app:strokeColor="#D60000"
+        app:strokeWidth="2dp"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
